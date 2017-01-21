@@ -4,6 +4,8 @@ app:
   - ./:/app
   - node_modules:/app/node_modules
   working_dir: /app
+  environment:
+  - VIRTUAL_HOST=www.christinagrimmietimeline.com christina.docker api.christinagrimmietimeline.com
   command: npm run dev
   ports:
   - 3000:3000
